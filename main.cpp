@@ -16,7 +16,8 @@ int main(){
 			count++;
 		}
 		x=nextstep;
-		}while(count<100);
+		x=checkout(x,2);
+		}while(count<1000);
 		temperature=temperature*0.88;
 		std::cout<<"the temperature now is "<<temperature<<std::endl;
 	}while(temperature>0.00001);

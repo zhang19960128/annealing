@@ -4,4 +4,5 @@
 double energy(double* x,int len);
 double possibility(double,double);
 double* next(double*,int,double);
+double* checkout(double*,int);
 #endif

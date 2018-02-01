@@ -33,3 +33,22 @@ double* next(double* x,int len,double temperature){
 		}
 	}
 }
+double* checkout(double* in,int len){
+	double* newposition=new double[2];
+	newposition[0]=10*(rand()-RAND_MAX/2.0)/RAND_MAX;
+	newposition[1]=10*(rand()-RAND_MAX/2.0)/RAND_MAX;
+	if(in[0]>10){
+		return newposition;
+	}
+	else if(in[0]<-10){
+		return newposition;
+	}
+	else if(in[1]>10){
+		return newposition;
+	}
+	else if(in[0]<-10){
+		return newposition;
+	}
+	newposition=in;
+	return newposition;
+}
